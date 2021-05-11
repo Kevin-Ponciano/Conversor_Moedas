@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Conversor de Moedas</title>
+
+  <link rel="sortcut icon" href="favicon.png" type="image/png" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="w3-content meio w3-content w3-pale-green">
+		<div class="we-container w3-green">
+
+			<h2>Conversor de Moedas</h2>
+		</div>
+		<div>
+			<h3>Moeda a ser Convertida</h3>
+			<p><input class="w3-radio w3-green" type="radio" name="in" value="real" checked>REAL
+        <input class="w3-radio" type="radio" name="in" value="dolar">DOLAR
+        <input class="w3-radio" type="radio" name="in" value="euro">EURO
+        <input class="w3-radio" type="radio" name="in" value="libra">LIBRA</p>
+      </div>
+      <div>
+        <h3>Para qual moeda converter?</h3>
+        <p><input class="w3-radio" type="radio" name="out" value="real">REAL
+        <input class="w3-radio" type="radio" name="out" value="dolar" checked>DOLAR
+        <input class="w3-radio" type="radio" name="out" value="euro">EURO
+        <input class="w3-radio" type="radio" name="out" value="libra">LIBRA</p>
+      </div>
+    <div>
+      <p class="meio">Digite o valor a Converter:</p>
+      <input class="w3-input w3-pale-green meio" id="quantia" type="number" value="0" onchange="converter()";>
+    </div>
+    
+    <!--<button class="w3-button w3-green" onclick="converter();">CONVERTER</button>-->
+
+    <p>O valor Convertido é: <span id="resultado" >0,0</span></p>
+      
+  </div>
+  <div class="w3-content w3-pale-green">
+    <div class="we-container w3-green meio">
+			<h2>Cotação do dia</h2>
+		</div>
+			<a href="https://mercadocotacao.com/dolar-hoje/" id="r_USD" title="Cotação do Dólar Americano Hoje" name="mercado_cotacao">Dólar
+				Hoje</a>
+			<script async src="https://mercadocotacao.com/money/mercadocotacao.js">
+			</script>
+
+			
+      <a href="https://mercadocotacao.com/euro-hoje/" id="r_EUR" title="Cotação do Euro Hoje" name="mercado_cotacao">Euro Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+
+      
+      <a href="https://mercadocotacao.com/libra-esterlina-hoje/" id="r_GBP" title="Cotação da Libra Esterlina Hoje" name="mercado_cotacao">Libra Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+
+		</div>
+
+    <a class="meio we-container w3-green" style="font-size: 20px;text-decoration: none;color: #999;display: block;margin-bottom: 2px;border-top: 1px solid #eee;" href="https://github.com/Kevin-Ponciano" target="_blank">By Kevin Ponciano</a>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+body{
+  width: auto;
+  height: auto;
+  background-image: url(fundo.jpg);
+  
+}
+
+div{
+  text-indent:2em;
+}
+.meio{
+  text-align: center;
+  text-indent:2em;
+}
+.input{
+  height: 50%;
+}
