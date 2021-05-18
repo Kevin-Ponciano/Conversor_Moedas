@@ -2,19 +2,18 @@ var dolarDinamico = document.getElementById("r_USD");
 dolarDinamico = dolarDinamico.innerText;
 dolarDinamico = dolarDinamico.replace(/\D/g,'');
 dolarDinamico = dolarDinamico/100;
-console.log(dolarDinamico);
+
 
 var euroDinamico = document.getElementById("r_EUR");
 euroDinamico = euroDinamico.innerText;
 euroDinamico = euroDinamico.replace(/\D/g,'');
 euroDinamico = euroDinamico/100;
-console.log(euroDinamico);
 
-var libraDinamico = document.getElementById("r_EUR");
+
+var libraDinamico = document.getElementById("r_GBP");
 libraDinamico = libraDinamico.innerText;
 libraDinamico = libraDinamico.replace(/\D/g,'');
 libraDinamico = libraDinamico/100;
-console.log(libraDinamico);
 
 
 function converter(){
